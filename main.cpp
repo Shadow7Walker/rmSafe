@@ -100,11 +100,16 @@ int main(int argc, char* argv[]) {
     bool recursive = false;
     bool verbose = false;
     bool emptyDir = false;
+    bool stopParsing = false;
     std::vector<std::string> files;
 
     for (int i = 1; i < argc; ++i) {
         std::string arg = argv[i];
-        if (arg[0] == '-' && arg.length() > 1) {
+        if (!stopParsing && arg == "--") {
+            stopParsing = true;
+            continue;
+        }
+        if (!stopParsing && arg[0] == '-' && arg.length() > 1) {
             if (arg == "--force") force = true;
             else if (arg == "--interactive") interactive = true;
             else if (arg == "--recursive") recursive = true;
@@ -151,7 +156,9 @@ int main(int argc, char* argv[]) {
     for (const auto& file : files) {
         fs::path p(file);
         
-        if (!fs::exists(p)) {
+        std::error_code ec;
+        auto st = fs::symlink_status(p, ec);
+        if (ec || st.type() == fs::file_type::not_found) {
             if (!force) {
                 std::cerr << "rmSafe: cannot remove '" << file << "': No such file or directory\n";
                 exitCode = 1;

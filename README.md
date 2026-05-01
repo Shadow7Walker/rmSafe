@@ -66,7 +66,28 @@ This will produce a `.deb` and an `.rpm` file in the `build/` folder which can b
 
 ## How to use
 
-Alias `rm` to `rmSafe` for maximum safety!
+To ensure maximum safety, you should alias your system's default `rm` command to `rmSafe`. 
+
+We have provided automated setup scripts in the `scripts/` directory to instantly configure this for you!
+
+### Using the Automated Setup Scripts
+
+**For Linux / macOS (Bash, Zsh, Fish):**
+Run the shell script. It will automatically detect your shell and apply the alias to your `~/.bashrc`, `~/.zshrc`, or `config.fish`.
+```bash
+bash ./scripts/setup_alias_linux.sh
+```
+
+**For Windows (PowerShell):**
+Run the PowerShell script. It will automatically add the alias to your global `$PROFILE`.
+```powershell
+.\scripts\setup_alias_windows.ps1
+```
+
+*(Note: After running the scripts, please restart your terminal or source your profile to apply the changes.)*
+
+### Manual Setup
+If you prefer to set the alias manually:
 
 **Bash / Zsh:**
 Add this to your `~/.bashrc` or `~/.zshrc`:
