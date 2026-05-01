@@ -1,0 +1,9 @@
+Architecture: amd64
+Description: Safe rm command that moves files to the recycle bin/trash instead of deleting permanently.
+Maintainer: user@example.com
+Package: rmsafe
+Priority: optional
+Section: devel
+Version: 1.0.0
+Installed-Size: 95
+

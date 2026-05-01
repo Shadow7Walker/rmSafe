@@ -1,0 +1,37 @@
+Building target platforms: x86_64
+Building for target x86_64
+error: Unable to open sqlite database /var/lib/rpm/rpmdb.sqlite: unable to open database file
+error: cannot open Packages index using sqlite - Operation not permitted (1)
+error: cannot open Packages database in /var/lib/rpm
++ umask 022
++ cd /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ mv /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/tmpBBroot
++ RPM_EC=0
++ jobs -p
++ exit 0
++ umask 022
++ cd /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ /usr/bin/rm -rf /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux
++ /usr/bin/mkdir -p /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM
++ /usr/bin/mkdir /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux
++ [ -e /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux ]
++ rm -rf /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux
++ mv /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/tmpBBroot /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/rmsafe-1.0.0-Linux
++ /usr/lib/rpm/brp-compress /usr
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-remove-la-files
++ umask 022
++ cd /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ RPM_EC=0
++ jobs -p
++ exit 0
++ umask 022
++ cd /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ test -d /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ rm -rf /mnt/c/Users/adhik/Documents/Projects/rmSafe/build_linux/_CPack_Packages/Linux/RPM/BUILD/rmsafe-1.0.0-build
++ RPM_EC=0
++ jobs -p
++ exit 0

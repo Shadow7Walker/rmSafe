@@ -1,0 +1,12 @@
+The rm command that we use in linux and windows is quite dangerous
+Because unlike regular delete in file explorer which moves the file to recycle bin/trash
+The rm command deletes the file permanently
+
+It is a major problem as often AI agent delete wrong files and folders
+
+So the project is to create a safe rm command which will move the file to recycle bin/trash instead of deleting it permanently
+This command should behave just like rm command in terms of syntax and options but should move the file to recycle bin/trash instead of deleting it permanently
+
+We intend to design it for Linux as .deb and .rpm package and for windows as .exe package
+It should be lightweight and fast
+It should be easy to install and use
